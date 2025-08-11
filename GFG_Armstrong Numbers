@@ -1,0 +1,17 @@
+class Solution {
+    static boolean armstrongNumber(int n) {
+        int k=n;int res=0;int cube=0;
+        while(n!=0){
+            int digit=n%10;
+            n=n/10;
+            cube=digit*digit*digit;
+            res+=cube;
+        }
+        if(res==k){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+}
