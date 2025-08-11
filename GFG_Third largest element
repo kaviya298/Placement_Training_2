@@ -1,0 +1,13 @@
+class Solution {
+    int thirdLargest(int arr[]) {
+        int n=arr.length;int result=0;
+        Arrays.sort(arr);
+        if(n>=3){
+            result=arr[n-3];
+        }
+        else{
+            result=-1;
+        }
+        return result;
+    }
+}
