@@ -1,0 +1,13 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    System.out.println("5ft, 8in = " + intocenti(5,8)+ "cm");
+	    System.out.println("68in = " + intocenti(68)+ "cm");
+	}
+	public static double intocenti(int inch){
+	    return inch*2.54;
+	}
+	public static double intocenti(int feet,int inch){
+	    return intocenti((feet*12) + inch);
+	}
+}
